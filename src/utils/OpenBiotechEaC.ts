@@ -4,6 +4,7 @@ import {
   EverythingAsCodeGitHub,
   EverythingAsCodeIdentity,
   EverythingAsCodeIoT,
+  EverythingAsCodeLicensing,
   EverythingAsCodeSources,
 } from './.deps.ts';
 
@@ -13,4 +14,5 @@ export type OpenBiotechEaC =
   & EverythingAsCodeGitHub
   & EverythingAsCodeIdentity
   & EverythingAsCodeIoT
+  & EverythingAsCodeLicensing
   & EverythingAsCodeSources;
