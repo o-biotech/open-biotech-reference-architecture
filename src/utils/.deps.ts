@@ -7,10 +7,10 @@ export {
   userOAuthConnExpired,
 } from 'jsr:@fathym/common@0.2.181/oauth';
 
-export type { EverythingAsCode } from 'jsr:@fathym/eac@0.2.104';
-export type { EaCRuntimeContext } from 'jsr:@fathym/eac@0.2.104/runtime';
-export type { EaCRuntimeHandler } from 'jsr:@fathym/eac@0.2.104/runtime/pipelines';
-export { loadEaCStewardSvc } from 'jsr:@fathym/eac@0.2.104/steward/clients';
+export type { EverythingAsCode } from 'jsr:@fathym/eac@0.2.101';
+export type { EaCRuntimeContext } from 'jsr:@fathym/eac@0.2.101/runtime';
+export type { EaCRuntimeHandler } from 'jsr:@fathym/eac@0.2.101/runtime/pipelines';
+export { loadEaCStewardSvc } from 'jsr:@fathym/eac@0.2.101/steward/clients';
 
 export type {
   EaCCloudAsCode,
