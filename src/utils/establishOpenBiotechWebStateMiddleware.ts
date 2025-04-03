@@ -5,7 +5,7 @@ import {
   EaCAzureADProviderDetails,
   EaCRuntimeContext,
   EaCRuntimeHandler,
-  loadEaCLicensingStewardSvc,
+  loadEaCLicensingSvc,
   loadJwtConfig,
   UserOAuthConnection,
   userOAuthConnExpired,
@@ -185,7 +185,7 @@ export function establishOpenBiotechWebStateMiddleware(): EaCRuntimeHandler<Open
     ctx.State = state;
 
     if (ctx.State.Username) {
-      const parentEaCSvc = await loadEaCLicensingStewardSvc();
+      const parentEaCSvc = await loadEaCLicensingSvc();
 
       const licRes = await parentEaCSvc.License.Get(
         ctx.Runtime.EaC.EnterpriseLookup!,
@@ -267,6 +267,8 @@ export function establishOpenBiotechWebStateMiddleware(): EaCRuntimeHandler<Open
 
       if (currentAccTok.value) {
         state.Cloud.AzureAccessToken = currentAccTok.value;
+      } else {
+        state.Cloud.Phase = CloudPhaseTypes.Connect;
       }
     }
 

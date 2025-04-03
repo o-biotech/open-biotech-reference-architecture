@@ -30,7 +30,7 @@ export type {
 
 export type { EverythingAsCodeIoT } from 'jsr:@fathym/eac-iot@0.0.15';
 
-export type { EverythingAsCodeLicensing } from 'jsr:@fathym/eac-licensing@0.0.15';
-export { loadEaCLicensingStewardSvc } from 'jsr:@fathym/eac-licensing@0.0.15/steward/clients';
+export type { EverythingAsCodeLicensing } from 'jsr:@fathym/eac-licensing@0.0.23';
+export { loadEaCLicensingSvc } from 'jsr:@fathym/eac-licensing@0.0.23/clients';
 
-export type { EverythingAsCodeSources } from 'jsr:@fathym/eac-sources@0.0.13';
+export type { EverythingAsCodeSources } from 'jsr:@fathym/eac-sources@0.0.14';
